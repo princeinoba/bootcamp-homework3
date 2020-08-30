@@ -32,13 +32,13 @@ function getCriteria() {
   //console.log(userCriteria.length);
 
   do {
-    userCriteria.includeLowercase = confirm("Would you like to include lowercase characters in your password?");
+    userCriteria.includeLowercase = confirm("Do you want to include lowercase characters?");
 
-    userCriteria.includeUppercase = confirm("Would you like to include uppercase characters in your password?");
+    userCriteria.includeUppercase = confirm("How about uppercase characters?");
 
-    userCriteria.includeNumbers = confirm("Would you like to include numbers in your password?");
+    userCriteria.includeNumbers = confirm("Do you want to include numbers in your password?");
 
-    userCriteria.includeSpecialChar = confirm("Would you like to include special characters in your password?");
+    userCriteria.includeSpecialChar = confirm("And what about special characters?");
     
     //console.log(userCriteria.characterTypes);
   } while(!isACharacterTypeSelected(userCriteria));
@@ -79,14 +79,6 @@ function isPasswordLengthValid(length) {
 
 function generatePassword(userCriteria) {
   const allRequestedCharacters = getRequestedCharacters(userCriteria);
-
-  /*To ensure that all character types appear in the password,
-  a list is generated of all the selected character types. 
-  When a character type is used, it is removed
-  from the list so that it may not be randomly selected
-  again and the computer has to select another character type. 
-  Once the list of possible character types to pick from is exhausted, 
-  this list is refreshed again.*/
 
   const numberOfCharacterTypes = allRequestedCharacters.length;
   //generated list here

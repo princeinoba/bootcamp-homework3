@@ -1,4 +1,4 @@
-# homework3.github.io
+# homework3
 password-generator
 # 03 JavaScript: Password Generator
 

@@ -21,4 +21,4 @@ Arrays,
 Loops (Do/while, while, for), 
 Browser functions (prompt, confirm, alert), 
 
-© 2020 Trilogy Education Services, a 2U, Inc. brand. homework assignment.Carleton University Coding Bootcamp. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. [Carleton University Coding Bootcamp](https://bootcamp.carleton.ca/). All Rights Reserved.
